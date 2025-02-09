@@ -100,7 +100,7 @@ ol {
 
 .talks > li {
     margin-bottom: 4ex;
-    width: 460px;
+    width: 500px;
 }
 
 hr {
@@ -139,6 +139,28 @@ a.internal:hover {
     overflow: hidden;
     line-height: 80px;
 }
+
+#back-to-top {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: white;
+    padding: 10px 220px;
+    font-size: 12px;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    opacity: 0;
+    /* display: none; */
+    pointer-events: none;  /* Prevent clicks when hidden */
+    /* transition: opacity 0.1s ease-in-out; */
+}
+
+#back-to-top:hover {
+    opacity: 1;
+}
+
 
 @media (min-width: 100px) {
     ol, ul, details {

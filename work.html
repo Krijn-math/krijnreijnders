@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,12 @@
   <style>
     /* Override background for work.html */
     body {
-      background-color:rgba(110, 179, 107, 0.4); /* Change to your desired color */
+      background-color: rgba(110, 179, 107, 0.4);
+      /* Change to your desired color */
     }
   </style>
 </head>
+
 <body>
   <div class="container">
     <div id="nav-placeholder"></div>
@@ -20,16 +23,19 @@
       <h2>theses</h2>
       <ul>
         <li>
-          my phd thesis <b>'Isogenies & Isometries</b> is available at 
-          <center><a href="http://thesis.post-quantum-crypto.com" target="_blank">thesis.post-quantum-crypto.com</a></center><br>
+          my phd thesis <b>'Isogenies & Isometries</b> is available at
+          <center><a href="http://thesis.post-quantum-crypto.com" target="_blank">thesis.post-quantum-crypto.com</a>
+          </center><br>
         </li>
         <li>
-          my masters thesis <b>'Campana Curves'</b> is available at  
-          <center><a href="http://masters.post-quantum-crypto.com" target="_blank">masters.post-quantum-crypto.com</a></center><br>
+          my masters thesis <b>'Campana Curves'</b> is available at
+          <center><a href="http://masters.post-quantum-crypto.com" target="_blank">masters.post-quantum-crypto.com</a>
+          </center><br>
         </li>
         <li>
-          my bachelors thesis <b>'Heisenberg Groups'</b> is available at  
-          <center><a href="http://bachelors.post-quantum-crypto.com" target="_blank">bachelors.post-quantum-crypto.com</a></center><br>
+          my bachelors thesis <b>'Heisenberg Groups'</b> is available at
+          <center><a href="http://bachelors.post-quantum-crypto.com"
+              target="_blank">bachelors.post-quantum-crypto.com</a></center><br>
         </li>
       </ul>
       <br>
@@ -47,69 +53,69 @@
       <ol reversed id="list" start="12" class="works"></ol>
       <script>
         function loadListData() {
-            fetch('papers.txt')
-                .then(response => response.text())
-                .then(data => {
-                    var list = document.getElementById('list');
-                    var lines = data.split('\n');
+          fetch('papers.txt')
+            .then(response => response.text())
+            .then(data => {
+              var list = document.getElementById('list');
+              var lines = data.split('\n');
 
-                    lines.forEach(function (line) {
-                        var values = line.split(';');
-                        var title = values[0];
-                        var authors = values[1];
-                        var authorlist = authors.split(',');
-                        var id = values[2];
-                        var abstract = values[3];
+              lines.forEach(function (line) {
+                var values = line.split(';');
+                var title = values[0];
+                var authors = values[1];
+                var authorlist = authors.split(',');
+                var id = values[2];
+                var abstract = values[3];
 
-                        var listItem = document.createElement('li');
+                var listItem = document.createElement('li');
 
-                        var titleItem = document.createElement('b');
-                        titleItem.textContent = title;
+                var titleItem = document.createElement('b');
+                titleItem.textContent = title;
 
-                        var authorItem = document.createElement('span');
-                        var authorFormatted = "";
-                        authorlist.forEach(function (author, index) {
-                            if (index === authorlist.length - 2) {
-                                authorFormatted += author + " and ";
-                            } else if (index === authorlist.length - 1) {
-                                authorFormatted += author;
-                            } else {
-                                authorFormatted += author + ", ";
-                            }
-                        });
-                        authorItem.textContent = authorFormatted;
-
-                        var floatItem = document.createElement('span');
-                        floatItem.style = "float:right";
-
-                        var urlItem = document.createElement('a');
-                        urlItem.href = "//ia.cr/" + id;
-                        urlItem.target = "_blank";
-                        urlItem.textContent = "eprint";
-
-                        floatItem.appendChild(urlItem);
-
-                        listItem.appendChild(titleItem);
-                        listItem.appendChild(document.createElement('br'));
-                        listItem.appendChild(authorItem);
-                        listItem.appendChild(floatItem);
-
-                        var abstractHeading = document.createElement('details');
-                        var summaryElement = document.createElement("summary");
-                        summaryElement.textContent = "abstract";
-                        var bodyElement = document.createElement("span");
-                        bodyElement.className = "insum";
-                        bodyElement.innerHTML = abstract;
-                        abstractHeading.appendChild(summaryElement);
-                        abstractHeading.appendChild(bodyElement);
-
-                        listItem.appendChild(abstractHeading);
-
-                        list.appendChild(listItem);
-                        list.appendChild(document.createElement('br'));
-                        list.appendChild(document.createElement('br'));
-                    });
+                var authorItem = document.createElement('span');
+                var authorFormatted = "";
+                authorlist.forEach(function (author, index) {
+                  if (index === authorlist.length - 2) {
+                    authorFormatted += author + " and ";
+                  } else if (index === authorlist.length - 1) {
+                    authorFormatted += author;
+                  } else {
+                    authorFormatted += author + ", ";
+                  }
                 });
+                authorItem.textContent = authorFormatted;
+
+                var floatItem = document.createElement('span');
+                floatItem.style = "float:right";
+
+                var urlItem = document.createElement('a');
+                urlItem.href = "//ia.cr/" + id;
+                urlItem.target = "_blank";
+                urlItem.textContent = "eprint";
+
+                floatItem.appendChild(urlItem);
+
+                listItem.appendChild(titleItem);
+                listItem.appendChild(document.createElement('br'));
+                listItem.appendChild(authorItem);
+                listItem.appendChild(floatItem);
+
+                var abstractHeading = document.createElement('details');
+                var summaryElement = document.createElement("summary");
+                summaryElement.textContent = "abstract";
+                var bodyElement = document.createElement("span");
+                bodyElement.className = "insum";
+                bodyElement.innerHTML = abstract;
+                abstractHeading.appendChild(summaryElement);
+                abstractHeading.appendChild(bodyElement);
+
+                listItem.appendChild(abstractHeading);
+
+                list.appendChild(listItem);
+                list.appendChild(document.createElement('br'));
+                list.appendChild(document.createElement('br'));
+              });
+            });
         }
 
         loadListData();
@@ -125,6 +131,24 @@
         document.getElementById('nav-placeholder').innerHTML = data;
       })
       .catch(error => console.error('Error loading nav:', error));
+  </script>
+
+  <div id="back-to-top">back to top</div>
+  <script>
+    document.addEventListener("scroll", function () {
+      let button = document.getElementById("back-to-top");
+      if (window.scrollY < 200) {  // Show after scrolling 200px down
+        button.style.opacity = "0";
+        button.style.pointerEvents = "none";  // Disable clicks when hidden
+      } else {
+        button.style.opacity = "0.3";
+        button.style.pointerEvents = "auto";  // Enable clicks
+      }
+    });
+
+    document.getElementById("back-to-top").addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
   </script>
 </body>
 

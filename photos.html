@@ -33,7 +33,6 @@
             /* This crops the image if necessary */
             display: block;
         }
-
     </style>
 </head>
 
@@ -95,12 +94,30 @@
 
     <script>
         fetch('sidebar.html')
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-          })
-          .catch(error => console.error('Error loading nav:', error));
-      </script>
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading nav:', error));
+    </script>
+
+    <div id="back-to-top">back to top</div>
+    <script>
+        document.addEventListener("scroll", function () {
+            let button = document.getElementById("back-to-top");
+            if (window.scrollY < 200) {  // Show after scrolling 200px down
+                button.style.opacity = "0";
+                button.style.pointerEvents = "none";  // Disable clicks when hidden
+            } else {
+                button.style.opacity = "0.3";
+                button.style.pointerEvents = "auto";  // Enable clicks
+            }
+        });
+
+        document.getElementById("back-to-top").addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
 </body>
 
 </html>

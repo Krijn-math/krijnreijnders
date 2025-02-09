@@ -22,14 +22,15 @@
         .cv-list li {
             position: relative;
             margin: 1em 0;
-            padding-left: 100px;
+            padding-left: 0px;
             /* Reserve space for the bullet */
         }
 
         .cv-list li::before {
             content: attr(data-year);
+            font-weight: 150;
             position: absolute;
-            left: 0;
+            left: -100px;
             width: 80px;
             text-align: right;
             /* font-weight: bold; */
@@ -272,6 +273,25 @@
           })
           .catch(error => console.error('Error loading nav:', error));
       </script>
+
+    <div id="back-to-top">back to top</div>
+    <script>
+        document.addEventListener("scroll", function() {
+            let button = document.getElementById("back-to-top");
+            if (window.scrollY < 200) {  // Show after scrolling 200px down
+                button.style.opacity = "0";
+                button.style.pointerEvents = "none";  // Disable clicks when hidden
+            } else {
+                button.style.opacity = "0.3";
+                button.style.pointerEvents = "auto";  // Enable clicks
+            }
+        });
+        
+        document.getElementById("back-to-top").addEventListener("click", function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>        
+        
 </body>
 
 </html>
