@@ -58,8 +58,7 @@
                 }
 
                 document.addEventListener("DOMContentLoaded", function () {
-                    // Create an array [1, 2, …, 30]
-                    const photoNumbers = Array.from({ length: 10 }, (_, i) => i + 1);
+                    const photoNumbers = Array.from({ length: 32 }, (_, i) => i + 1);
                     shuffleArray(photoNumbers);
                     const selected = photoNumbers.slice(0, 10);  // Pick 10 random numbers
 
