@@ -1,4 +1,10 @@
-RewriteEngine on
+RewriteEngine On
+
+# rewrite work.krijnreijnders.com to krijnreijnders.com/work
+RewriteCond %{HTTP_HOST} ^(work|photos|cv|blurbs|links)\.krijnreijnders\.com$ [NC]
+RewriteRule ^(.*)$ https://krijnreijnders.com/%1 [R=301,L]
+
+# remove .html from urls
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(.*)$ $1.html
+RewriteRule ^(.*)$ $1.html [L]
