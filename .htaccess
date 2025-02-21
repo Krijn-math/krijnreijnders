@@ -1,7 +1,7 @@
 RewriteEngine On
 
 # rewrite work.krijnreijnders.com to krijnreijnders.com/work
-RewriteCond %{HTTP_HOST} ^(work|photos|cv|blurbs|links)\.krijnreijnders\.com$ [NC]
+RewriteCond %{HTTP_HOST} ^(work|photos|cv|notes|links)\.krijnreijnders\.com$ [NC]
 RewriteRule ^(.*)$ https://krijnreijnders.com/%1 [R=301,L]
 
 # remove .html from urls
