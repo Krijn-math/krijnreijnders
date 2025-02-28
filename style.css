@@ -218,6 +218,7 @@ h1 {
     ul,
     details {
         width: 500px;
+        margin: 0 auto;
         text-align: justify;
     }
 
@@ -243,7 +244,7 @@ h1 {
     .container {
         width: 100%;
         padding: 0;
-        margin: 0;
+        margin: 00px;
     }
 
     /* Remove sidebar absolute positioning */
@@ -276,8 +277,16 @@ h1 {
 
     /* Adjust main content area */
     main {
-        margin: 0;
+        position: relative;
+        margin: 0 auto;
+        /* Centers the container on the page */
+        text-align: justify;        
         padding: 1em;
-        max-width: 100%;
+        max-width: 90%;
     }
+
+    #back-to-top {
+        padding: 10px 180px;
+        white-space: nowrap;
+      }
 }
