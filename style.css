@@ -233,6 +233,10 @@ h1 {
     }
 }
 
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
 @media (max-width: 600px) {
 
     /* Expand container to full width */
