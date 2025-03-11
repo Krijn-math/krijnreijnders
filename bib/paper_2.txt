@@ -1,0 +1,10 @@
+@article{mce24,
+  title={Hardness Estimates of the Code Equivalence Problem in the Rank Metric},
+  author={Reijnders, Krijn and Samardjiska, Simona and Trimoska, Monika},
+  journal={Designs, Codes and Cryptography},
+  volume={92},
+  number={3},
+  pages={833--862},
+  year={2024},
+  publisher={Springer}
+}

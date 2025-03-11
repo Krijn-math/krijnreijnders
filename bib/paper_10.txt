@@ -1,0 +1,7 @@
+@misc{RotK-2024,
+      author = {Corte-Real Santos, Maria and Reijnders, Krijn},
+      title = {Return of the Kummer: a Toolbox for Genus-2 Cryptography},
+      howpublished = {Cryptology {ePrint} Archive, Paper 2024/948},
+      year = {2024},
+      url = {https://eprint.iacr.org/2024/948}
+}

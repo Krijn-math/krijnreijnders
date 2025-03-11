@@ -1,0 +1,7 @@
+@misc{4italians1dutch2025,
+      author = {Giacomo Borin and Edoardo Persichetti and Paolo Santini and Federico Pintore and Krijn Reijnders},
+      title = {A Guide to the Design of Digital Signatures based on Cryptographic Group Actions},
+      howpublished = {Cryptology {ePrint} Archive, Paper 2023/718},
+      year = {2023},
+      url = {https://eprint.iacr.org/2023/718}
+}

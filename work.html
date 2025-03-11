@@ -60,7 +60,10 @@
               var list = document.getElementById('list');
               var lines = data.split('\n');
 
+              var i = lines.length;
+
               lines.forEach(function (line) {
+                i -= 1;
                 var values = line.split(';');
                 var title = values[0];
                 var authors = values[1];
@@ -89,11 +92,38 @@
                 var floatItem = document.createElement('span');
                 floatItem.style = "float:right";
 
+                var gitItem = document.createElement('span');
+                gitItem.classList.add("copy-btn");
+                gitItem.textContent = "bib";
+                gitItem.dataset.bibValue = i;
+
+                gitItem.addEventListener("click", async function () {
+                  let paperNumber = this.dataset.bibValue;
+                  let filePath = `bib/paper_${paperNumber}.txt`;
+
+                  try {
+                    let response = await fetch(filePath);
+                    let text = await response.text();
+                    await navigator.clipboard.writeText(text);
+
+                    gitItem.textContent = "copied!";
+                    setTimeout(() => gitItem.textContent = 'bib', 1000);
+
+                  } catch (error) {
+                    console.error(`Failed to copy ${filePath}:`, error);
+                  }
+                });
+
                 var urlItem = document.createElement('a');
                 urlItem.href = "//ia.cr/" + id;
                 urlItem.target = "_blank";
                 urlItem.textContent = "eprint";
 
+                var spacer = document.createElement('span');
+                spacer.textContent = " ";
+
+                floatItem.appendChild(gitItem);
+                floatItem.appendChild(spacer);
                 floatItem.appendChild(urlItem);
 
                 listItem.appendChild(titleItem);
