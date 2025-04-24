@@ -98,7 +98,7 @@
                 gitItem.dataset.bibValue = i;
 
                 gitItem.addEventListener("click", async function () {
-                  let paperNumber = this.dataset.bibValue;
+                  let paperNumber = parseInt(this.dataset.bibValue);
                   let filePath = `bib/paper_${paperNumber+1}.txt`;
 
                   try {
