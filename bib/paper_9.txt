@@ -1,8 +1,10 @@
 @inproceedings{apressqi2024,
-  title={Apr{\`e}sSQI: Extra fast verification for SQIsign using extension-field signing},
+  title        = {Apr{\`{e}}sSQI: Extra Fast Verification for SQIsign Using Extension-Field
+                  Signing},
   author={Corte-Real Santos, Maria and Eriksen, Jonathan Komada and Meyer, Michael and Reijnders, Krijn},
-  booktitle={EUROCRYPT '24},
+  booktitle={EUROCRYPT 2024},
   pages={63--93},
   year={2024},
+  doi          = {10.1007/978-3-031-58716-0\_3},
   organization={Springer}
 }

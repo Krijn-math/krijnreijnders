@@ -1,8 +1,10 @@
 @inproceedings{meds2023,
-  title={Take your MEDS: digital signatures from matrix code equivalence},
+  title        = {Take Your {MEDS:} Digital Signatures from Matrix Code Equivalence},
   author={Chou, Tung and Niederhagen, Ruben and Persichetti, Edoardo and Randrianarisoa, Tovohery Hajatiana and Reijnders, Krijn and Samardjiska, Simona and Trimoska, Monika},
   booktitle={AfricaCrypt '23},
   pages={28--52},
   year={2023},
+  doi          = {10.1007/978-3-031-37679-5\_2},
   organization={Springer}
 }
+

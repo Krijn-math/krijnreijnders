@@ -1,8 +1,9 @@
 @inproceedings{pro-radicals22,
   title={Fully Projective Radical Isogenies in Constant-Time},
   author={Chi-Dom{\'\i}nguez, Jes{\'u}s-Javier and Reijnders, Krijn},
-  booktitle={CT-RSA '22},
+  booktitle={CT-RSA 2022},
   pages={73--95},
   year={2022},
+  doi          = {10.1007/978-3-030-95312-6\_4},
   organization={Springer}
 }

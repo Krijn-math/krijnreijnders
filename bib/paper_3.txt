@@ -1,8 +1,10 @@
 @inproceedings{patientzero22,
-  title={Patient Zero \& Patient Six: Zero-Value and Correlation Attacks on CSIDH and SIKE},
+  title={Patient Zero {\&} Patient Six: Zero-Value and Correlation Attacks on {CSIDH} and {SIKE}},
   author={Campos, Fabio and Meyer, Michael and Reijnders, Krijn and St{\"o}ttinger, Marc},
   booktitle={SAC '22},
   pages={234--262},
   year={2022},
+  doi          = {10.1007/978-3-031-58411-4\_11},
   organization={Springer}
 }
+

@@ -1,7 +1,12 @@
-@misc{simplepairings25,
-      author = {Giacomo Pope, Krijn Reijnders, Damien Robert, Alessandro Sferlazza, and Benjamin Smith},
-      title = {Simpler and Faster Pairings from the Montgomery Ladder},
-      howpublished = {Cryptology {ePrint} Archive, Paper 2025/672},
-      year = {2025},
-      url = {https://eprint.iacr.org/2025/672}
+@article{simplepairings25,
+         author={Giacomo Pope and Krijn Reijnders and Damien Robert and Alessandro Sferlazza and Benjamin Smith},
+         title={Simpler and Faster Pairings from the Montgomery Ladder},
+         volume={2},
+         number={2},
+         year={2025},
+         date={2025-07-07},
+         issn={3006-5496},
+         doi={10.62056/ah2i893y6},
+         journal={{IACR} Communications in Cryptology},
+         publisher={International Association for Cryptologic Research}
 }

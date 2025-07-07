@@ -1,7 +1,15 @@
-@misc{dCTIDH2025,
-      author = {Fabio Campos and Andreas Hellenbrand and Michael Meyer and Krijn Reijnders},
-      title = {{dCTIDH}: Fast & Deterministic {CTIDH}},
-      howpublished = {Cryptology {ePrint} Archive, Paper 2025/107},
-      year = {2025},
-      url = {https://eprint.iacr.org/2025/107}
+@article{DBLP:journals/iacr/CamposHMR25,
+  author       = {Fabio Campos and
+                  Andreas Hellenbrand and
+                  Michael Meyer and
+                  Krijn Reijnders},
+  title        = {dCTIDH: Fast {\&} Deterministic {CTIDH}},
+  journal      = {{IACR} Cryptol. ePrint Arch.},
+  pages        = {107},
+  year         = {2025},
+  url          = {https://eprint.iacr.org/2025/107},
+  timestamp    = {Mon, 17 Feb 2025 15:44:00 +0100},
+  biburl       = {https://dblp.org/rec/journals/iacr/CamposHMR25.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
+

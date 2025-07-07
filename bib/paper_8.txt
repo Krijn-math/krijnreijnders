@@ -1,8 +1,9 @@
 @inproceedings{krijn2023,
-  title={Effective pairings in Isogeny-based Cryptography},
+  title={Effective Pairings in Isogeny-based Cryptography},
   author={Reijnders, Krijn},
-  booktitle={LatinCrypt '23},
+  booktitle={{LATINCRYPT} 2023},
   pages={109--128},
   year={2023},
+  doi          = {10.1007/978-3-031-44469-2\_6},
   organization={Springer}
 }
