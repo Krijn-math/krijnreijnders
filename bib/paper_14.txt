@@ -1,0 +1,9 @@
+@inproceedings{tate-profile,
+  title={{The Tate Profile}},
+  author={Reĳnders, Krĳn},
+  booktitle    = {Progress in Cryptology - {LATINCRYPT} 2025 - 9th International Conference
+                  on Cryptology and Information Security in Latin America, {LATINCRYPT}
+                  2025, Medellin, Colombia, October 1-3, 2025, Proceedings},
+  year={2025},
+  organization={Springer}
+}

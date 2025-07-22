@@ -56,7 +56,7 @@
       <ul reversed id="list" class="works"></ul>
       <script>
         function loadListData() {
-          fetch('papers.txt')
+          fetch('papersmanual.txt')
             .then(response => response.text())
             .then(data => {
               var list = document.getElementById('list');
@@ -117,12 +117,23 @@
                 });
 
                 var urlItem = document.createElement('a');
-                urlItem.href = "//ia.cr/" + id;
-                urlItem.target = "_blank";
-                urlItem.textContent = "eprint";
 
-                var spacer = document.createElement('span');
-                spacer.textContent = " ";
+                if(id.startsWith("pdf")) {
+                  urlItem.href = "/" + id;
+                  urlItem.target = "_blank";
+                  urlItem.textContent = "pdf";
+
+                  var spacer = document.createElement('span');
+                  spacer.textContent = "\u00A0\u00A0\u00A0\u00A0";
+                } else {
+                  urlItem.href = "//ia.cr/" + id;
+                  urlItem.target = "_blank";
+                  urlItem.textContent = "eprint";
+                
+                  var spacer = document.createElement('span');
+                  spacer.textContent = " ";
+                }
+                
 
                 floatItem.appendChild(gitItem);
                 floatItem.appendChild(spacer);
