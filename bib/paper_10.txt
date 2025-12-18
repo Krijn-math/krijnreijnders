@@ -4,6 +4,6 @@
       publisher = "{I}nternational {A}ssociation for {C}ryptologic {R}esearch",
       title = {Return of the Kummer: a Toolbox for Genus-2 Cryptography},
       volume = "2",
-      number = "4",
+      number = "3",
       year = 2025"
 }
