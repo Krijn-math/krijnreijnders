@@ -1,0 +1,6 @@
+@misc{cokernel-pairing,
+  title={{The Cokernel Pairing}},
+  author={Reĳnders, Krĳn},
+  year={2025},
+  url={krijnreijnders.com/pdf/cokernel-pairing.pdf}
+}
