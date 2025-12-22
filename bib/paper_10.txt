@@ -5,5 +5,5 @@
       title = {Return of the Kummer: a Toolbox for Genus-2 Cryptography},
       volume = "2",
       number = "3",
-      year = 2025"
+      year = 2025
 }
