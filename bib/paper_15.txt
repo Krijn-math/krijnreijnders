@@ -1,6 +1,7 @@
 @misc{cokernel-pairing,
-  title={{The Cokernel Pairing}},
-  author={Reĳnders, Krĳn},
-  year={2025},
-  url={krijnreijnders.com/pdf/cokernel-pairing.pdf}
+      author={Reĳnders, Krĳn},
+      title = {The Cokernel Pairing},
+      howpublished = {Cryptology {ePrint} Archive, Paper 2026/001},
+      year = {2026},
+      url = {https://eprint.iacr.org/2026/001}
 }
