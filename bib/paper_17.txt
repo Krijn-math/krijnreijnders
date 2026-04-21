@@ -1,0 +1,7 @@
+@misc{faster-smt,
+      author={Dai, Yu and El Housni, Youssef and Koshelev, Dimitri and Reĳnders, Krĳn},
+      title = {Divide-and-Pair: Faster subgroup membership testing for elliptic curves},
+      howpublished = {Cryptology {ePrint} Archive, Paper 2026/749},
+      year = {2026},
+      url = {https://eprint.iacr.org/2026/749}
+}
