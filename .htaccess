@@ -4,6 +4,9 @@ RewriteEngine On
 RewriteCond %{HTTP_HOST} ^(work|photos|cv|notes|links)\.krijnreijnders\.com$ [NC]
 RewriteRule ^(.*)$ https://krijnreijnders.com/%1 [R=301,L]
 
+# /ohrid -> /pdf/ohrid.pdf
+RewriteRule ^ohrid/?$ /pdf/ohrid.pdf [L]
+
 # remove .html from urls
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.html -f
