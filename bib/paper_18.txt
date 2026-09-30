@@ -1,0 +1,7 @@
+@misc{am-i-superspecial,
+      author={{Corte-Real Santos}, Maria and Lorenzon, Gioella and Reĳnders, Krĳn},
+      title = {Supersingularity and Superspeciality Verification for Abelian Surfaces},
+      howpublished = {Cryptology {ePrint} Archive, Paper 2026/2259},
+      year = {2026},
+      url = {https://eprint.iacr.org/2026/2259}
+}
