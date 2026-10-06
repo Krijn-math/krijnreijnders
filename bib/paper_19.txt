@@ -1,0 +1,7 @@
+@misc{EPRINT:BDDEKM26,
+  author = {Andrea Basso and Pierrick Dartois and Max Duparc and Jonathan Komada Eriksen and Sabrina Kunzweiler and Michael Meyer and Giacomo Pope and Krijn Reijnders and Damien Robert and Ryan Rueger and Sina Schaeffler},
+  title = {MIKE: a fast and compact post-quantum NIKE},
+  howpublished = {Cryptology {ePrint} Archive, Paper 2026/XXX},
+  year = {2026},
+  url = {https://eprint.iacr.org/2026/XXX}
+}
